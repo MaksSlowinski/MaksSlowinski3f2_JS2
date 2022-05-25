@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> zad 84 </title>
+<script language="JavaScript">
+    function slowinski_start(){
+    start_slo = new Date();
+    poczatek_slo = start_slo.getTime();
+    }
+function slowinski_stop(){
+    stop_slo = new Date();
+    koniec_slo = stop_slo.getTime();
+    roznica_slo = koniec_slo - poczatek_slo;
+    pokaz1.innerHTML = roznica_slo / 1000 + " s";
+}
+</script>
+<style>
+</style>
+</head>
+<body>
+<script language="JavaScript">
+    dzis_slo = new Date();
+    document.write("<br>Aktualny czas : ", dzis_slo.getHours(), ":", dzis_slo.getMinutes(), "<br>");
+</script>
+<input type="button" name="Button1" value="START" onclick="slowinski_start()">
+<input type="button" name="Button2" value="STOP" onclick="slowinski_stop()">
+<center>
+    <table>
+    <tr id="pokaz1"></tr>
+    </table>
+</center>
+</body>
+</html>

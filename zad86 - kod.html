@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> zad 86 - kod</title>
+<style>
+</style>
+</head>
+<body>
+<center>
+<p>zad86.html - kod<p>
+<textarea rows="20" cols="100">
+<html>
+<head>
+<title> zad 86 </title>
+<script language="JavaScript">
+    function Przycisk1(){
+    pokaz1.innerHTML = "Ostatnio modyfikowany: " + document.lastModified;
+    }
+    function Przycisk2(){
+    dzis = new Date();
+    miesiac = parseFloat;
+    miesiac = dzis.getMonth() + 1;
+    pokaz2.innerHTML = "<br> Aktualna data: " + dzis.getDate() + "." + miesiac + "." + dzis.getFullYear();
+    }
+function Przycisk3(){
+    dzis = new Date();
+    pokaz3.innerHTML = "<br>Aktualny czas: " + dzis.getHours() + ":" + dzis.getMinutes();
+}
+</script>
+</head>
+<body>
+<form>
+    <a onclick="Przycisk1(' ')"><img src="przy1.jpg" alt="Przycisk1()" border="0" onmouseover="this.src = 'przy2.jpg'" onmouseout="this.src = 'przy1.jpg'" /></a>
+    <a onclick="Przycisk2(' ')"><img src="przy3.jpg" alt="Przycisk2()" border="0" onmouseover="this.src = 'przy4.jpg'" onmouseout="this.src = 'przy3.jpg'" /></a>
+    <a onclick="Przycisk3(' ')"><img src="przy5.jpg" alt="Przycisk3()" border="0" onmouseover="this.src = 'przy6.jpg'" onmouseout="this.src = 'przy5.jpg'" /></a>
+</form>
+<table>
+    <tr id="pokaz1"></tr>
+    <tr id="pokaz2"></tr>
+    <tr id="pokaz3"></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+<title> zad 82 - kod</title>
+<style>
+</style>
+</head>
+<body>
+<center>
+<p>zad82.html - kod<p>
+<textarea rows="20" cols="100">
+<html>
+<head>
+<title> zad 82 </title>
+<script language="JavaScript">
+function pushbutton(){
+alert("Czesc !");
+}
+</script>
+<style>
+    p{
+    font-size: 70px;
+    }
+    p1{
+    font-size: 25px;
+    }
+    </style>
+</head>
+<body>
+<center>
+    <p>Slowinski</p>
+    <br/>
+    <p1>
+    dzis = new Date() --> zmienna dzis przyjmuje informacje o podanym przez nas czasie z dokladna lokalizacja czasowa
+    <br/>
+    dzis = dzis.getHours() --> zmienna dzis przyjmuje informacje o aktualnej godzinie
+    <br/>
+    dzis = dzis.getMinutes() --> zmienna dzis przyjmuje informacje o aktualnej minucie
+    <br/>
+    dzis = dzis.getMonth() + 1 --> zmienna dzis przyjmuje informacje o aktualnym miesiacu
+    <br/>
+    dzis = dzis.getDate() --> zmienna dzis przyjmuje informacje o aktualnym dniu
+    <br/>
+    dzis = dzis.getFullYear() --> zmienna dzis przyjmuje informacje o aktualnym roku
+    </p1>
+    <br/>
+    <br/>
+    <br/>
+    Ostatnio zmodyfikowany
+<script language="LiveScript">
+    document.write(document.lastModified, "<br>")
+</script>
+<button class="button" type="button" name="Button1" value="Nacisnij mnie" onclick="pushbutton()">Nacisnij mnie</button>
+<script language="JavaScript">
+    dzis = new Date()
+document.write("<br>Aktualny czas : ", dzis.getHours(), ":", dzis.getMinutes());
+document.write("<br>Aktualna data : ", dzis.getDate(), ",", dzis.getMonth() + 1, ",", dzis.getFullYear());
+</script>
+</center>
+</body>
+</html>
